@@ -1,0 +1,12 @@
+README.md
+setup.py
+pysnooper_click_able/__init__.py
+pysnooper_click_able/pycompat.py
+pysnooper_click_able/tracer.py
+pysnooper_click_able/utils.py
+pysnooper_click_able/variables.py
+pysnooper_click_able.egg-info/PKG-INFO
+pysnooper_click_able.egg-info/SOURCES.txt
+pysnooper_click_able.egg-info/dependency_links.txt
+pysnooper_click_able.egg-info/requires.txt
+pysnooper_click_able.egg-info/top_level.txt
