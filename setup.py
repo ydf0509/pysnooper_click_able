@@ -13,7 +13,7 @@ setup(
     name='pysnooper_click_able',  #
     version="1.0",
     description=(
-        'pysnooper debug调试，测色 ，可点击跳转的，统计代码行数'
+        'pysnooper debug调试，测色 ，可点击跳转的，统计代码动态真实运行 行数'
     ),
     keywords=("pysnooper", ),
     # long_description=open('README.md', 'r',encoding='utf8').read(),
@@ -40,13 +40,6 @@ setup(
         'Topic :: Software Development :: Libraries'
     ],
     install_requires=[
-        'pymongo==3.5.1',
-        'tomorrow3==1.1.0',
-        'concurrent-log-handler==0.9.9',
-        'elasticsearch',
-        'kafka-python==1.4.6',
-        'requests',
-        'pika'
     ]
 )
 """
