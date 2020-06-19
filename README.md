@@ -62,6 +62,8 @@ def f1(x):
 def f2(x):
     if x == 7:
         b = 8
+        for i in range(1000):
+            b += i
     else:
         b = 9
 
@@ -79,6 +81,12 @@ f3(5, False)
 
 ```
 
+如果传f(5,False) ,则会显示执行了f2函数，并运行了b=9 的else分支，并显示执行的时间代码行数是8。
+
+![Image text][](https://i.niupic.com/images/2020/06/19/8hmF.png)
 
 
+如果传f(7,False) ,则会显示执行了f2函数，并运行了b=8 的if分支，并显示运行了2009行，
+
+因为  for i in range(1000): 和 b += i 这两行各执行了1000次。
 
