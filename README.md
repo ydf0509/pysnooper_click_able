@@ -1,5 +1,7 @@
 ## 1. pip install pysnooper_click_able
 
+神级别黑科技装饰器。自动显示代码运行轨迹并在pycharm控制台点击可以紧缺跳转到文件的代码行。
+
 ```
 基于pysnooper的改版
 举要功能是调试debu代码用的，基础用法 百度 pysnooper 就可以。
