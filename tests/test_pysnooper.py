@@ -16,14 +16,36 @@ import requests
 import urllib3
 from urllib import request
 from pysnooper_click_able import snoop
+# from pysnooper042 import snoop
+import logging
+import asyncio
+import aiohttp
 #
-# ss = requests.session()
-@snoop(depth=100,dont_effect_on_linux=False)
+import nb_log
+
+
+@snoop(depth=1000,dont_effect_on_linux=True)
 def f():
-    # requests.get('http://www.baidu.com')
+    # ss = requests.session()
+    # ss = urllib3.PoolManager()
+    # resp = ss.request('get','https://www.v2ex.com/amp/t/575411')
     # requests.get('http://www.sina.com')
-    response = request.urlopen('http://www.baidu.com')
+    # response = request.urlopen('https://www.baidu.com')
     # ss.get('http://www.baidu.com')
 
+    # logging.getLogger('hi').warning('helo')
+    for i in range(1):
+        nb_log.simple_logger.warning('haha')
 
-f()
+
+# @snoop(depth=1000,)
+async def af():
+        # with snoop(depth=100):
+        async with aiohttp.request('get', url='https://www.baidu.com') as resp:
+            text = await resp.text()
+            print(text)
+
+
+if __name__ == '__main__':
+    f()
+    # asyncio.get_event_loop().run_until_complete(af())
